@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ScrollView, View } from "react-native";
-import album from './src/api/'
-import albumesRecientes from './src/components/albumes'
-
+import album from "../api";
 
 const GameScreen = ({ route }) => {
   const [albumId, setAlbum] = useState([]);
@@ -33,14 +31,13 @@ const GameScreen = ({ route }) => {
 
   getImage();
   return (
-    <albumesRecientes
-        albumId = {albumId} 
-        title = {title}
-        image={image} 
-        />
+    <View>
+        <ScrollView>
+
+        </ScrollView>
+    </View>
   );
 };
 
 
 export default GameScreen;
-
